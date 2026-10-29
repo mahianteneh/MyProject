@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p>You can use the form below to send me a message.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="skills.html">Skills and Education</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="media.html">Media and Interests</a> |
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <main>
+        <form action="#" method="get">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       minlength="6" required>
+                <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                       min="1" max="120">
+                <br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Your Interests</legend>
+
+                <p>Select your gender (optional):</p>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <p>What are your interests?</p>
+
+                <input type="checkbox" id="reading" name="interest" value="reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="technology" name="interest" value="technology">
+                <label for="technology">Technology</label>
+
+                <input type="checkbox" id="design" name="interest" value="design">
+                <label for="design">Graphic Design</label>
+
+                <br><br>
+
+                <label for="subject">Message Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Choose a subject</option>
+                    <option value="education">Education</option>
+                    <option value="projects">Projects</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea id="message" name="message"
+                          rows="5" cols="35"
+                          placeholder="Write your message here"
+                          required></textarea>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Thank you for contacting me!</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
